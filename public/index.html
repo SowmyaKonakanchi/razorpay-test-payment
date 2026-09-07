@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Launch Kit | Razorpay Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Launch Kit home"><span class="brand-mark">L</span> launch kit</a>
+      <span class="environment"><span class="dot"></span> Razorpay test mode</span>
+    </header>
+
+    <section class="checkout-grid">
+      <div class="intro">
+        <p class="eyebrow">A focused start</p>
+        <h1>Everything you need to ship your next idea.</h1>
+        <p class="lede">A practical launch toolkit for founders who want less setup and more momentum.</p>
+        <div class="signal-row"><span>01</span><span class="signal-line"></span><span>Built for day one</span></div>
+      </div>
+
+      <section class="order-panel" aria-labelledby="order-title">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Your order</p>
+            <h2 id="order-title">Launch Kit</h2>
+          </div>
+          <span class="tag">ONE-TIME</span>
+        </div>
+        <ul class="features">
+          <li><span class="check">&#10003;</span> 40+ launch-ready templates</li>
+          <li><span class="check">&#10003;</span> Private founder community</li>
+          <li><span class="check">&#10003;</span> Lifetime updates</li>
+        </ul>
+        <div class="total"><span>Total</span><strong>INR 499</strong></div>
+        <button class="pay-button" id="pay-button" type="button">Pay securely <span aria-hidden="true">&#8594;</span></button>
+        <p class="secure-note"><span aria-hidden="true">&#9670;</span> Secured by Razorpay. Test mode enabled.</p>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </section>
+    </section>
+
+    <footer>Launch Kit <span>/</span> Simple tools for meaningful work</footer>
+  </main>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
